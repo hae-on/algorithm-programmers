@@ -46,9 +46,9 @@ function solution(numbers, hand) {
       // 왼손으로 누름
       isLeft = true;
     } else if (target === 3 || target === 6 || target === 9) {
-      // 눌러야 할 키패트가 3, 6, 9이면 오른손으로 누름
+      // 눌러야 할 키패드가 3, 6, 9이면 오른손으로 누름
     } else {
-      // 2, 5, 8, 0은 왼손과 오른손의 현 위치에서 누를 키패드가 가까운 손으로 누름
+      // 2, 5, 8, 0 중간 키패드 경우 (왼손과 오른손의 현 위치에서 누를 키패드가 가까운 손으로 누름)
       // 위에서 선언해준 getDistance 함수를 사용한다.
       // 왼손과 누를 키패드의 거리
       const leftDistance = getDistance(leftHand, keys[target]);
