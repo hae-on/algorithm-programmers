@@ -6,3 +6,5 @@ function solution(n, m) {
   const lcm = (a, b) => (a * b) / gcd(a, b); //최소공배수
   return [gcd(n, m), lcm(n, m)]; //배열값으로 반환
 }
+
+console.log(solution(2, 5));
